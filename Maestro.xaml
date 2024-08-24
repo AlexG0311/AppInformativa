@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInformativa.Maestro"
+             Title="Maestro">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label
+                Margin="10,30"
+                FontSize="Subtitle"
+                Text="Ganadores en los juegos Olimpicos"/>
+            <Button Text="Ángel Barajas"
+               Background="White"
+                Clicked="irApagina1"
+                Margin="20,18"/>
+
+            <Button Text="Yeison López"
+               Clicked="irApagina2"
+               Background="White"
+               Margin="20,18"/>
+
+
+            <Button Text="Mari Leivis Sánchez"
+                Clicked="irApagina3"
+                    Background="White"
+                Margin="20,18"/>
+
+
+            <Button Text="Tatiana Rentería"
+                Clicked="irApagina4"
+                Background="White"
+                Margin="20,18"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInformativa.Page1"
+             Title="Page1">
+    <VerticalStackLayout>
+        <Label 
+            Text="Lunes 5 de Agosto"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="10"/>
+
+        <Label
+            Text="Ángel Barajas hizo historia no solo por colgarse la primera medalla (plata) de Colombia en estos Juegos Olímpicos, sino porque con su rutina de barra fija masculina logró la primera medalla de Gimnasia artística en la historia del país."
+             Margin="10,0"/>
+
+        <Image 
+            Source="Andres.png"/>
+        <Label/>
+        
+        
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInformativa.Page2"
+             Title="Page2">
+    <VerticalStackLayout>
+        <Label 
+            Text="Yeison López"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="10,10"/>
+        <Label
+            Text="En levantamiento de pesas, el la categoría de 89kg,
+            Yeison López levantó 380 kilogramos para quedar en el segundo lugar y darle la segunda medalla de plata a la delegación colombiana. Por su parte en la categoría 71kg pero en la rama femenina Mari Leivis Sánchez combinó para un total de 257 puntoslos cuales le valieron la medalla de plata, tercera para Colombia en París 2024."/>
+        <Image 
+            Margin="10,20"
+            Source="yeison.png"/>
+    </VerticalStackLayout>
+</ContentPage>

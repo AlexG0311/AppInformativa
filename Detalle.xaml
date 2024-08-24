@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInformativa.Detalle"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Detalle">
+    <ScrollView>
+        <StackLayout>
+        
+
+            <Label 
+            Text="Juegos Olimpicos"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="20"
+            FontSize="Title"
+            TextColor="Yellow"/>
+
+        <Image 
+            Source="juegos_olimpicos.png"
+            Margin="10,0"/>
+        <ScrollView >
+
+            <Label
+                Margin="10,20"
+              Text="Ganó la medalla de oro en el 69 femenino Prueba de Arranque de 1,5 kg en los Juegos Centroamericanos y del Caribe 2018 celebrados en Barranquilla, Colombia.5​ También ganó la medalla de plata en el 69 femenino. Evento de envión en kg.6​ Ese mismo año compitió en los 71kg en el Campeonato Mundial de Halterofilia celebrado en Ashgabat, Turkmenistán"/>
+           
+        </ScrollView>
+        <Label
+    Margin="10,20"
+  Text="Ganó la medalla de oro en el 69 femenino Prueba de Arranque de 1,5 kg en los Juegos Centroamericanos y del Caribe 2018 celebrados en Barranquilla, Colombia.5​ También ganó la medalla de plata en el 69 femenino. Evento de envión en kg.6​ Ese mismo año compitió en los 71kg en el Campeonato Mundial de Halterofilia celebrado en Ashgabat, Turkmenistán"/>
+
+        <Label
+    Margin="10,20"
+  Text="Ganó la medalla de oro en el 69 femenino Prueba de Arranque de 1,5 kg en los Juegos Centroamericanos y del Caribe 2018 celebrados en Barranquilla, Colombia.5​ También ganó la medalla de plata en el 69 femenino. Evento de envión en kg.6​ Ese mismo año compitió en los 71kg en el Campeonato Mundial de Halterofilia celebrado en Ashgabat, Turkmenistán"/>
+
+            <CollectionView Margin="15,20">
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Atletismo</x:String>
+                        <x:String>Boxeo</x:String>
+                        <x:String>Ciclismo</x:String>
+                        <x:String>Hípica</x:String>
+                        <x:String>Esgrima</x:String>
+                        <x:String>Fútbol</x:String>
+                        <x:String>Gimnasia</x:String>
+                        <x:String>Golf</x:String>
+                        <x:String>Halterofilia</x:String>
+                        <x:String>Judo</x:String>
+                        <x:String>Lucha</x:String>
+                        <x:String>Natación</x:String>
+                        <x:String>Piragüismo</x:String>
+                        <x:String>Saltos</x:String>
+                        <x:String>Skateboarding</x:String>
+                        <x:String>Tenis</x:String>
+                        <x:String>Tiro con arco</x:String>
+                        <x:String>Triatlón</x:String>
+                        <x:String>Vela</x:String>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding}" 
+                   FontSize="20"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"
+                   Padding="10"/>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Grid>
+                <toolkit:MediaElement 
+            Source="embed://video.mp4" 
+            HeightRequest="200"
+            WidthRequest="340"
+             ShouldAutoPlay="True"
+          
+             />
+            </Grid>
+            <Label
+                Margin="20"
+               
+                Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+
+
+        </StackLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</ContentPage>

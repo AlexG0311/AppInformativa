@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInformativa.Page3"
+             Title="Mari Leivis Sánchez">
+    <VerticalStackLayout>
+        <Label 
+            Text="Mari Leivis Sánchez"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="Title"/>
+
+        <Label
+            Margin="10,10"
+     
+            Text="Mari Leivis Sánchez Periñán ​ es una levantadora de pesas colombiana. Es tres veces medallista de plata en 71 kg en el Campeonato Panamericano de Halterofilia .​​ Obtuvo la medalla de plata en los Juegos Olímpicos de París 2024.​"/>
+        <Image
+            Source="mari.png"
+            WidthRequest="300"/>
+    </VerticalStackLayout>
+</ContentPage>
