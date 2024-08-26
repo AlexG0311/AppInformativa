@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aCHgKwXc6si2/eubepsPwAVqSrdbK+NKGFN6AnkNioHmjyeHviK3b+wLwzGl6uL3yoxMLP8CwURBqKFMJC78KA==",
+  "dgSpecHash": "0QaomxzTs2EhfsDPYdAD/wAnzmNVk3W7dlmJBSRKnMXPNF6tNM21YPh/CIBgT9d9N4oCzhjU2b69eGe3Y4Vk4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa.csproj",
+  "projectFilePath": "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa\\AppInformativa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexd\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\2.0.0\\communitytoolkit.maui.mediaelement.2.0.0.nupkg.sha512",
     "C:\\Users\\alexd\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",

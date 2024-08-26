@@ -16,24 +16,34 @@
             FontSize="Title"
             TextColor="Yellow"/>
 
-        <Image 
-            Source="juegos_olimpicos.png"
-            Margin="10,0"/>
-        <ScrollView >
+
 
             <Label
-                Margin="10,20"
+                Margin="10,10"
               Text="Ganó la medalla de oro en el 69 femenino Prueba de Arranque de 1,5 kg en los Juegos Centroamericanos y del Caribe 2018 celebrados en Barranquilla, Colombia.5​ También ganó la medalla de plata en el 69 femenino. Evento de envión en kg.6​ Ese mismo año compitió en los 71kg en el Campeonato Mundial de Halterofilia celebrado en Ashgabat, Turkmenistán"/>
-           
+
+            <Grid>
+                <toolkit:MediaElement 
+            Source="embed://intro.mp4" 
+            HeightRequest="200"
+            WidthRequest="340"
+            ShouldAutoPlay="true"
+ 
+    />
+            </Grid>
+            <Image
+                />
+
+            <ScrollView >
+
         </ScrollView>
         <Label
-    Margin="10,20"
-  Text="Ganó la medalla de oro en el 69 femenino Prueba de Arranque de 1,5 kg en los Juegos Centroamericanos y del Caribe 2018 celebrados en Barranquilla, Colombia.5​ También ganó la medalla de plata en el 69 femenino. Evento de envión en kg.6​ Ese mismo año compitió en los 71kg en el Campeonato Mundial de Halterofilia celebrado en Ashgabat, Turkmenistán"/>
+            Margin="10,20"
+            Text="Ganó la medalla de oro en el 69 femenino Prueba de Arranque de 1,5 kg en los Juegos Centroamericanos y del Caribe 2018 celebrados en Barranquilla, Colombia.5​ También ganó la medalla de plata en el 69 femenino. Evento de envión en kg.6​ Ese mismo año compitió en los 71kg en el Campeonato Mundial de Halterofilia celebrado en Ashgabat, Turkmenistán"/>
 
-        <Label
-    Margin="10,20"
-  Text="Ganó la medalla de oro en el 69 femenino Prueba de Arranque de 1,5 kg en los Juegos Centroamericanos y del Caribe 2018 celebrados en Barranquilla, Colombia.5​ También ganó la medalla de plata en el 69 femenino. Evento de envión en kg.6​ Ese mismo año compitió en los 71kg en el Campeonato Mundial de Halterofilia celebrado en Ashgabat, Turkmenistán"/>
-
+            
+            
+   
             <CollectionView Margin="15,20">
                 <CollectionView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
@@ -69,15 +79,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <Grid>
-                <toolkit:MediaElement 
-            Source="embed://video.mp4" 
-            HeightRequest="200"
-            WidthRequest="340"
-             ShouldAutoPlay="True"
-          
-             />
-            </Grid>
+         
             <Label
                 Margin="20"
                

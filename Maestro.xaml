@@ -5,10 +5,30 @@
              Title="Maestro">
     <ScrollView>
         <VerticalStackLayout>
+            <Grid>
+                <Frame 
+    WidthRequest="150" 
+    HeightRequest="150" 
+    CornerRadius="75" 
+    BorderColor="Gray" 
+    HasShadow="True"
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+                    Margin="10,0,0,0">
+                    <Frame.Content>
+                        <Image Source="paris" Aspect="AspectFill"
+                    WidthRequest="200"
+                   HeightRequest="150"
+                               
+                   />
+                    </Frame.Content>
+                </Frame>
+            </Grid>
             <Label
-                Margin="10,30"
-                FontSize="Subtitle"
-                Text="Ganadores en los juegos Olimpicos"/>
+                Margin="58,17,20,30"
+               
+                FontSize="Title"
+                Text="Juegos Olimpicos"/>
             <Button Text="Ángel Barajas"
                Background="White"
                 Clicked="irApagina1"

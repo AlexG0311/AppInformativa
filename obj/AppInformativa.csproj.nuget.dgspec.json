@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa.csproj": {}
+    "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa\\AppInformativa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa.csproj": {
+    "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa\\AppInformativa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa.csproj",
+        "projectUniqueName": "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa\\AppInformativa.csproj",
         "projectName": "AppInformativa",
-        "projectPath": "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa.csproj",
+        "projectPath": "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa\\AppInformativa.csproj",
         "packagesPath": "C:\\Users\\alexd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\obj\\",
+        "outputPath": "C:\\Users\\alexd\\OneDrive\\Escritorio\\AppInformativa\\AppInformativa\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

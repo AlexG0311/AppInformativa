@@ -2,22 +2,81 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppInformativa.Page1"
-             Title="Page1">
+              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="">
+    <ScrollView> 
     <VerticalStackLayout>
-        <Label 
-            Text="Lunes 5 de Agosto"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            Margin="10"/>
+       
+        <Grid>
+            <Frame 
+     WidthRequest="150" 
+     HeightRequest="150" 
+     CornerRadius="75" 
+     BorderColor="Gray" 
+     HasShadow="True"
+     HorizontalOptions="Center"
+     VerticalOptions="Center">
+                <Frame.Content>
+                    <Image Source="andres.png" Aspect="AspectFill"
+                     WidthRequest="200"
+                    HeightRequest="150"
+                     
+                    />
+                </Frame.Content>
+            </Frame>
+        </Grid>
 
         <Label
-            Text="Ángel Barajas hizo historia no solo por colgarse la primera medalla (plata) de Colombia en estos Juegos Olímpicos, sino porque con su rutina de barra fija masculina logró la primera medalla de Gimnasia artística en la historia del país."
-             Margin="10,0"/>
+            Text="Angel Barajas"
+             Margin="101,10,2,3"
+            FontAttributes="Bold"
+            FontSize="Title"/>
+        
+        <TableView Intent="Menu">
+            <TableRoot>
+                <TableSection Title="Medallas de Colombia en los Juegos Olímpicos París 2024"
+                              
+                               TextColor="White">
+                    <TextCell Text="Medallas de Oro" 
+                              TextColor="White"
+                            Detail="0" />
+                    <TextCell Text="Medallas de Plata"
+                              TextColor="White"
+                            Detail="3" />
+                    <TextCell Text="Medallas de Bronce"
+                              TextColor="White"
+                            Detail="1" />
+                    <TextCell Text="Total"
+                               TextColor="White"
+                            Detail="4" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Label Text="¿Quien es Andres Barajas?"
+               FontSize="Title"
+               Margin="30,0"/>
+        <Label 
+            Text="No sólo es el presente de la gimnasia artística de Colombia, sino que se perfila como uno de los grandes referentes de la especialidad para todo Sudamérica. Ángel Barajas, la joven estrella colombiana de la gimnasia obtuvo una cuota para los Juegos Olímpicos de París 2024 con apenas 17 años y le puso una guinda al postre de una carrera precoz y sumamente exitosa."
+            Margin="30,10"/>
 
-        <Image 
-            Source="Andres.png"/>
-        <Label/>
-        
-        
-    </VerticalStackLayout>
+        <Label 
+            
+            Text="El nacido en Cúcuta en 2006 confirmó la plaza el sábado durante su participación en la Copa del Mundo de Gimnasia Artística de Doha y en la que confirmó su lugar en lo más alto de la clasificación de atletas elegibles de barras paralelas."
+            Margin="30,10"/>
+
+
+            <Grid>
+                <toolkit:MediaElement 
+            Source="embed://andres.mp4" 
+            HeightRequest="200"
+            WidthRequest="340"
+            
+            
+ 
+    />
+            </Grid>
+
+        </VerticalStackLayout>
+
+   </ScrollView>
 </ContentPage>
