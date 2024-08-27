@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInformativa.Resumen"
+             Title="Resumen">
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="Resumen de los atletas colombianos en los Juegos Olímpicos París 2024: día con día"
+                   FontFamily="NerkoOne" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   Margin="20"
+                   FontSize="32"/>
+            <Image Source="todos.jpg"/>
+
+
+            <Label Text="Resumen dias martes y miercoles"
+               FontFamily="NerkoOne" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               Margin="20"
+               FontSize="32"/>
+            <Image Source="todos.jpg"/>
+
+            <Label Text="Miércoles 7 de Agosto" 
+       FontAttributes="Bold" 
+       FontSize="Medium" 
+       Margin="20"/>
+            <Label Text="A la apertura del torneo femenino de golf, María José Uribe presentó una de sus mejores rondas al colocarse en empate por el tercer lugar con una tarjeta de 70 golpes para un 3 bajo par." 
+        Margin="20"
+        FontSize="Small" />
+            <Label Text="En la ronda clasificatoria de clavados en trampolín de 3 metros, Luis Felipe Uribe logró colocarse en la décima posición con 423.80 puntos. De esta manera consigue su pase a la final de dicha prueba." 
+        Margin="20"
+        FontSize="Small" />
+            <Label Text="La medallista de plata en el Mundial de 2023 y campeona sudamericana, Flor Denis Ruiz Hurtado, participará en la final del lanzamiento de jabalina femenino al calificarse como la tercera mejor de su grupo. La pradereña registró su mejor puntuación en 64.40." 
+        Margin="20"
+        FontSize="Small" />
+            <Label Text="Mientras que Kevin Quintero no pude lograr su clasificación a la siguiente ronda de ciclismo en pista, su compatriota Cristian David Ortega pudo cumplir con la misión al colocarse en 12° lugar con tiempo de 9.426." 
+        Margin="20"
+        FontSize="Small" />
+
+            <Label Text="Martes 6 de Agosto" 
+       FontAttributes="Bold" 
+       FontSize="Medium" 
+       Margin="20"/>
+            <Label Text="En la final del salto de longitud masculino, Arnovis Dalmero quedó en la posición 10° con un puntaje de 7.83 (+0.2)." 
+        Margin="20"
+        FontSize="Small" />
+            <Label Text="En las preliminares de salto en la modalidad trampolín 3m masculino, Luis Felipe Uribe y Daniel Restrepo quedaron en las posiciones 17 y 20 respectivamente. Con ese resultado, Uribe clasificó a las semifinales." 
+        Margin="20"
+        FontSize="Small" />
+            <Label Text="En la clasificación de salto de longitud femenino Natalia Linares quedó en la posición número 11 del Grupo A, pero su marca de 6.40 (-1.1) no le alcanzó para entrar en la final." 
+        Margin="20"
+        FontSize="Small" />
+            <Label Text="En la repesca de los 400m femeninos de atletismo, Evelis Aguilar y Lina Esther Licona Torres quedaron en la posición 7 y 4 de sus respectivos grupos pero no clasificaron a las semifinales." 
+           Margin="20"
+            FontSize="Small" />
+            <Label Text="En los octavos de final de Lucha estilo libre 50 kg (F) Alisson Camila Cardozo Rey perdió contra Gabija Dilyte y en la misma ronda pero de Lucha Grecorromana 77 kg (M) Jair Alexis Cueró Muñoz perdió con Demeu Zhadrayev aunque luchará en el repechaje." 
+        Margin="20"
+        FontSize="Small" />
+            <Label Text="Victor Bolaños López terminó en la posición 15° en Vela kite masculino tras la regata 7." 
+        Margin="20"
+        FontSize="Small" />
+
+
+            <Label Text="Resumen dias jueves y viernes"
+            FontFamily="NerkoOne" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="20"
+            FontSize="32"/>
+            <Image Source="todos.jpg"/>
+
+            <Label Text="Viernes 9 de agosto" 
+         Margin="20"
+         FontAttributes="Bold" 
+         FontSize="Medium" />
+            <Label Text="En levantamiento de pesas, en la categoría de 89kg, Yeison López levantó 380 kilogramos para quedar en el segundo lugar y darle la segunda medalla de plata a la delegación colombiana. Por su parte en la categoría 71kg pero en la rama femenina Mari Leivis Sánchez combinó para un total de 257 puntos los cuales le valieron la medalla de plata, tercera para Colombia en París 2024." 
+            Margin="20"
+             FontSize="Small" />
+            <Label Text="En Ciclismo en pista Velocidad femenina, Martha Bayona Pineda clasificó a los octavos de final a través del repechaje. Por su parte, Stefany Cuadrado quedó eliminada." 
+         Margin="20"
+         FontSize="Small" />
+            <Label Text="En el Heptatlón, Martha Valeria Araujo sumó otro diploma histórico para la delegación colombiana tras quedar en la 7° posición con 6386 puntos combinado." 
+         Margin="20"
+         FontSize="Small" />
+            <Label Text="En la tercera ronda del Golf femenino, Mariajo Uribe se ubicó en la 6° posición con -5 al par y 211 en total." 
+         Margin="20"
+         FontSize="Small" />
+
+            <Label Text="Jueves 8 de agosto" 
+        FontAttributes="Bold" 
+        FontSize="Medium"
+        Margin="20"/>
+            <Label Text="En la final de los clavados de trampolín en 3 metros, Luis Uribe acabó en sexto lugar con un puntaje global de 421.85 y obtuvo un diploma olímpico. Así igualó la mejor actuación colombiana en la historia de los clavados, hecha por Juan Guillermo Urán y Víctor Ortega en sincronizados plataforma 10 metros durante Beijing 2008." 
+         Margin="20"
+         FontSize="Small" />
+            <Label Text="En la jornada de levantamiento de pesas, dentro de la categoría de 73kg, Luis Mosquera terminó en la quinta plaza con 340 kilogramos en total, y así obtuvo diploma olímpico." 
+         Margin="20"
+         FontSize="Small" />
+            <Label Text="En el golf, María José Uribe se colocó en el puesto T4 durante la segunda salida con 70 golpes, dos bajo par (-2), y un total de 140."
+        Margin="20"
+        FontSize="Small" />
+            <Label Text="En las cuatro pruebas del heptatlón (100m vallas, salto de altura, lanzamiento de peso y 200 metros planos), Valeria Aráujo finalizó 12° en la tabla general con 3710 puntos." 
+         Margin="20"
+         FontSize="Small" />
+            <Label Text="Por los 87kg de la lucha grecorromana, Carlos Muñoz cayó en el Repechaje a manos del polaco Arkadiusz Kułynycz por 1-3." 
+         Margin="20"
+         FontSize="Small" />
+            <Label Text="Manuela Gómez debutó en el canotaje y concluyó su participación en el cuarto sitio de los Cuartos de Final." 
+         Margin="20"
+         FontSize="Small" />
+            <Label Text="En los 59 kilogramos de la halterofilia, Yenny Álvarez se quedó en la última posición al no contar con un registro válido en el envión." 
+         Margin="20"
+         FontSize="Small" />
+            <Label Text="En el ciclismo de pista olímpico, el cual el país no disputaba desde Rio 2016, Fernando Gaviria acabó la prueba de ómnium en la posición 17, con 42 puntos, en sus segundos Olímpicos." 
+         Margin="20"
+         FontSize="Small" />
+
+
+            <Label Text="Resumen dias sabado y domingo"
+                FontFamily="NerkoOne" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                Margin="20"
+                FontSize="32"/>
+            <Image Source="todos.jpg"/>
+
+            <Label Text="Domingo 11 de agosto" 
+                   FontAttributes="Bold" 
+                   FontSize="Medium"
+                   Margin="20"/>
+            <Label Text="Tatiana Rentería consiguió la última medalla para la delegación colombiana con el bronce en la lucha libre femenina, categoría hasta 76 kilogramos, al vencer a la ecuatoriana Genesis Reasco." 
+                   FontSize="Small" 
+                   Margin="20"/>
+            <Label Text="En ciclismo de pista, Cristian Ortega obtuvo un diploma olímpico al quedar en el séptimo lugar del Keirin masculino. Kevin Quintero, el último campeón de la categoría, quedó eliminado en cuartos de final, Y en Sprint femenino, Martha Bayona también sumó un diploma con el séptimo puesto." 
+                   FontSize="Small" 
+                    Margin="20"/>
+            <Label Text="Angie Orjuela finalizó la maratón femenina en el puesto 75 tras realizar un tiempo de 2 horas, 42 minutos y 57 segundos." 
+                   FontSize="Small" 
+                    Margin="20"/>
+
+            <Label Text="Sábado 10 de agosto" 
+                   FontAttributes="Bold" 
+                   FontSize="Medium" 
+                    Margin="20"/>
+            <Label Text="Tatiana Rentería se metió hasta las semifinales de la Lucha estilo libre 76kg (F) pero cayó contra la japonesa Yuka Kagami. No obstante, el domingo tendrá la posibilidad de luchar por una medalla en el choque por el bronce." 
+                    FontSize="Small" 
+                    Margin="20"/>
+            <Label Text="Tras la cuarta ronda (y final) del Golf femenino, Mariajo Uribe terminó en la 10° posición con -4 al par y 284 en total." 
+                   Margin="20" 
+                   FontSize="Small" />
+            <Label Text="En el lanzamiento de jabalina femenino la abanderada Flor Ruiz consiguió un nuevo diploma para la delegación al terminar en la 5° posición con un resultado de 63.00." 
+                    Margin="20"
+                    FontSize="Small" />
+            <Label Text="En Ciclismo en pista Velocidad femenina, Martha Bayona Pineda quedó eliminada de la competencia y principal y disputará la carrera por el puesto 5 a 8." 
+                    Margin="20"
+                    FontSize="Small" />
+            <Label Text="En Ciclismo en pista pero keirin masculino, Kevin Santiago Quintero y Cristian David Ortega avanzaron a los cuartos de final." 
+                    Margin="20"
+                    FontSize="Small" />
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

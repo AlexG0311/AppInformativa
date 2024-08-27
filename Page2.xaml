@@ -2,18 +2,95 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppInformativa.Page2"
-             Title="Page2">
-    <VerticalStackLayout>
-        <Label 
-            Text="Yeison López"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            Margin="10,10"/>
-        <Label
-            Text="En levantamiento de pesas, el la categoría de 89kg,
-            Yeison López levantó 380 kilogramos para quedar en el segundo lugar y darle la segunda medalla de plata a la delegación colombiana. Por su parte en la categoría 71kg pero en la rama femenina Mari Leivis Sánchez combinó para un total de 257 puntoslos cuales le valieron la medalla de plata, tercera para Colombia en París 2024."/>
-        <Image 
-            Margin="10,20"
-            Source="yeison.png"/>
-    </VerticalStackLayout>
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Grid>
+                <Frame 
+    WidthRequest="150" 
+    HeightRequest="150" 
+    CornerRadius="75" 
+    BorderColor="Gray" 
+    HasShadow="True"
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+                    <Frame.Content>
+                        <Image Source="yeison.png" Aspect="AspectFill"
+                    WidthRequest="200"
+                   HeightRequest="150"
+                    
+                   />
+                    </Frame.Content>
+                </Frame>
+            </Grid>
+
+            <Label
+           Text="Yeison Lopez"
+            Margin="101,10,2,3"
+           FontAttributes="Bold"
+           FontSize="Title"/>
+
+            <TableView Intent="Menu">
+                <TableRoot>
+                    <TableSection>
+                        <TextCell 
+                              
+                              Detail="Levantador de pesas"
+                           />
+                        <TextCell Text="Medallas de Oro" 
+                             TextColor="White"
+                           Detail="0" />
+                        <TextCell Text="Medallas de Plata"
+                             TextColor="White"
+                           Detail="1" />
+                        <TextCell Text="Medallas de Bronce"
+                             TextColor="White"
+                           Detail="0" />
+                        <TextCell Text="Primera participacion" 
+                        TextColor="White"
+                        Detail="4 de agosto del 2024"/>
+                        
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Label
+             Margin="15,20"
+             Text="Fue ganador de la medalla de plata por lograr levantar 390kg"/>
+            <Label Text="Bibliografia"
+                   FontFamily="NerkoOne" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   Margin="20"
+                   FontSize="32"/>
+
+            <Label 
+            Text="El niño que un día tuvo que abandonar su natal Istmina (Chocó) porque la familia estaba amenazada en medio de conflicto armado, acaba de alcanzar otro valioso botín en su exitosa carrera deportiva: ganó una medalla de oro, dos de plata, hizo récord mundial y se convirtió en el clasificado número 44 de Colombia para los Juegos Olímpicos de París-2024."
+            Margin="30,10"/>
+
+            <Label 
+            Text="Yeison, que a la edad de 13 años fue guiado por su primo Wílmer, se enamoró de las pesas. Como juvenil cosechó 4 títulos mundiales e inclusive fue catalogado como el joven más fuerte del mundo en Olímpic Channel."
+            Margin="30,10"/>
+
+            <Label 
+            Text="Tras un receso de 16 meses, reapareció en 2018 en la categoría mayores. No alcanzó cupo para Tokio-2021, pero siguió insistiendo en el deporte y hoy recoge frutos, siendo una carta fuerte para buscar medalla en los Olímpicos de París-2024."
+            Margin="30,10"/>
+
+
+
+
+            <Grid>
+                <toolkit:MediaElement 
+           Source="embed://yeison.mp4" 
+             Margin="0,0,0,30"
+            HeightRequest="170"
+            WidthRequest="310"
+           
+/>
+            </Grid>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
 </ContentPage>

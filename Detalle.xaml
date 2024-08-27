@@ -3,31 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppInformativa.Detalle"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             Title="Detalle">
+             Title="Home">
+             
     <ScrollView>
         <StackLayout>
-        
 
-            <Label 
-            Text="Juegos Olimpicos"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            Margin="20"
-            FontSize="Title"
-            TextColor="Yellow"/>
 
+
+            <Frame
+    BackgroundColor="Black"
+    WidthRequest="400"
+    Padding="20"
+    Margin="2,10"
+    HasShadow="False"
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+
+                <Label
+                    FontSize="Title"
+        FontFamily="NerkoOne-Regular.ttf"
+        Text="Juegos Olimpicos"
+        TextColor="White"
+        HorizontalOptions="Center"
+        VerticalOptions="Center" />
+            </Frame>
 
 
             <Label
-                Margin="10,10"
-              Text="Ganó la medalla de oro en el 69 femenino Prueba de Arranque de 1,5 kg en los Juegos Centroamericanos y del Caribe 2018 celebrados en Barranquilla, Colombia.5​ También ganó la medalla de plata en el 69 femenino. Evento de envión en kg.6​ Ese mismo año compitió en los 71kg en el Campeonato Mundial de Halterofilia celebrado en Ashgabat, Turkmenistán"/>
+                  Margin="10,20"
+                  FontSize="20"
+                  VerticalOptions="Center"
+                  HorizontalOptions="Start"
+                  Padding="10"
+                  Text="Colombia tuvo su participación en los Juegos Olímpicos de París 2024 con cerca de 90 atletas en disciplinas como fútbol femenino, atletismo, natación, gimnasia, boxeo, tiro con arco, vela, esgrima, levantamiento de pesas, ciclismo, canotaje, golf, tenis y skateboarding, entre otras."/>
+
 
             <Grid>
                 <toolkit:MediaElement 
             Source="embed://intro.mp4" 
-            HeightRequest="200"
-            WidthRequest="340"
+            
             ShouldAutoPlay="true"
+                    Margin="0,0,0,0"
+                    HeightRequest="170"
+WidthRequest="340"
+                    
  
     />
             </Grid>
@@ -37,14 +56,40 @@
             <ScrollView >
 
         </ScrollView>
-        <Label
-            Margin="10,20"
-            Text="Ganó la medalla de oro en el 69 femenino Prueba de Arranque de 1,5 kg en los Juegos Centroamericanos y del Caribe 2018 celebrados en Barranquilla, Colombia.5​ También ganó la medalla de plata en el 69 femenino. Evento de envión en kg.6​ Ese mismo año compitió en los 71kg en el Campeonato Mundial de Halterofilia celebrado en Ashgabat, Turkmenistán"/>
+            <Label
+                Margin="10,20"
+                FontSize="20"
+                VerticalOptions="Center"
+                HorizontalOptions="Start"
+                Padding="10"
+                Text="El país ha competido en casi todos los Juegos Olímpicos desde Los Ángeles 1932 (excepto Helsinki 1952) obteniendo un total de 34 medallas repartidas en cinco oros, 13 platas y 16 bronces a lo largo de los años."/>
+            <Label
+                Margin="10,20"
+                FontSize="20"
+                VerticalOptions="Center"
+                HorizontalOptions="Start"
+                Padding="10"
+                Text="En París 2024 contó con una de las delegaciones más numerosas para el país con estrellas y medallistas olímpicos como Mariana Pajón, (la deportista colombiana que más medallas ganó), Lorena Arenas, Ingrit Valencia, Carlos Ramírez, entre otros."/>
 
-            
-            
-   
-            <CollectionView Margin="15,20">
+            <Image 
+                Source="s.jpg"
+                />
+            <Label 
+                Text="¿En qué deportes compitieron los atletas colombianos en París 2024?"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                Margin="20"
+                
+                FontSize="20"  
+                FontFamily="NerkoOne" 
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
+
+
+
+
+            <CollectionView Margin="15,8">
                 <CollectionView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Atletismo</x:String>
@@ -72,18 +117,89 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Label Text="{Binding}" 
-                   FontSize="20"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Start"
-                   Padding="10"/>
+            FontSize="20"
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
+            Padding="10"/>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-         
             <Label
-                Margin="20"
-               
-                Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+             Margin="20,4"
+                FontFamily="NerkoOne-Regular.ttf"
+                FontSize="25"
+             Text="Medallas de Colombia en los Juegos Olímpicos París 2024"/>
+            <TableView Intent="Menu">
+                <TableRoot>
+                    <TableSection>
+                        <TextCell Text="Medallas de Oro" 
+                            TextColor="White"
+                            Detail="0" />
+                        <TextCell Text="Medallas de Plata"
+                            TextColor="White"
+                            Detail="3" />
+                        <TextCell Text="Medallas de Bronce"
+                            TextColor="White"
+                            Detail="1" />
+                        <TextCell Text="Total"
+                            TextColor="White"
+                            Detail="4" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+            <CarouselView
+           
+            Margin="20,20"  
+            HeightRequest="300"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            IndicatorView="indicatorView">
+
+            <CarouselView.ItemTemplate>
+                
+                <DataTemplate>
+
+                        <Frame
+                            Margin="10,2"
+                            CornerRadius="20">
+
+
+                            <Image Source="{Binding .}" Aspect="AspectFill" 
+                       HeightRequest="300"
+                       WidthRequest="400"
+                         
+                       
+                       />
+                        </Frame>
+
+                    </DataTemplate>
+            </CarouselView.ItemTemplate>
+
+            <CarouselView.ItemsSource>
+                 <x:Array Type="{x:Type x:String}">
+                        <x:String>juegos_olimpicos.png</x:String>
+                        <x:String>p.png</x:String>
+                        <x:String>red.jpg</x:String>
+                    </x:Array>
+                </CarouselView.ItemsSource>
+
+            </CarouselView>
+            
+            <IndicatorView 
+            x:Name="indicatorView"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            IndicatorColor="Gray"
+            SelectedIndicatorColor="White"
+            IndicatorSize="10"/>
+            <Label Text=""
+                Margin="20,20"/>
+
+            <Button
+               Text="Resumen"
+                Margin="20,0,20,70"
+                Clicked="resumen"/>
 
 
         </StackLayout>

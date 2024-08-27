@@ -2,20 +2,94 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppInformativa.Page3"
-             Title="Mari Leivis Sánchez">
-    <VerticalStackLayout>
-        <Label 
-            Text="Mari Leivis Sánchez"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-            FontSize="Title"/>
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout>
 
-        <Label
-            Margin="10,10"
-     
-            Text="Mari Leivis Sánchez Periñán ​ es una levantadora de pesas colombiana. Es tres veces medallista de plata en 71 kg en el Campeonato Panamericano de Halterofilia .​​ Obtuvo la medalla de plata en los Juegos Olímpicos de París 2024.​"/>
-        <Image
-            Source="mari.png"
-            WidthRequest="300"/>
-    </VerticalStackLayout>
+            <Grid>
+                <Frame 
+    WidthRequest="150" 
+    HeightRequest="150" 
+    CornerRadius="75" 
+    BorderColor="Gray" 
+    HasShadow="True"
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+                    <Frame.Content>
+                        <Image Source="mari.png" Aspect="AspectFill"
+                    WidthRequest="200"
+                   HeightRequest="150"
+                    
+                   />
+                    </Frame.Content>
+                </Frame>
+            </Grid>
+
+            <Label
+           Text="Mari Leivis Sánchez"
+            Margin="70,10,2,3"
+           FontAttributes="Bold"
+           FontSize="Title"/>
+
+            <TableView Intent="Menu">
+                <TableRoot>
+                    <TableSection>
+                        <TextCell 
+                              
+                              Detail="Levantador de pesas"
+                           />
+                        <TextCell Text="Medallas de Oro" 
+                             TextColor="White"
+                           Detail="0" />
+                        <TextCell Text="Medallas de Plata"
+                             TextColor="White"
+                           Detail="1" />
+                        <TextCell Text="Medallas de Bronce"
+                             TextColor="White"
+                           Detail="0" />
+                        <TextCell Text="Primera participacion" 
+          TextColor="White"
+          Detail="4 de agosto del 2024"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Label
+                Margin="19,20"
+                Text="María Leivis Sánchez se destacó en los Juegos Olímpicos de 2024 al obtener la medalla de plata tras levantar un impresionante total de 257 kg"/>
+            <Label Text="Bibliografia"
+                   FontFamily="NerkoOne" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   Margin="20"
+                   FontSize="32"/>
+
+            <Label 
+            Text="Mari Leivis Sánchez, quien nació en Turbo, está dedicada a las pesas desde que tenía 13 años y siempre se ha destacado por su potencia."
+            Margin="30,10"/>
+
+            <Label 
+            Text="La historia de esta deportista arrancó en los Juegos Intercolegiados donde empezó a mostrar sus condiciones, las mismas que la llevaron a integrar rápidamente la Selección Colombia juvenil, con la que se destacó al ganar tres medallas de plata en el mundial sub-17."
+            Margin="30,10"/>
+
+            <Label 
+            Text="En su carrera deportiva también aparecen el oro ganado en Juegos Centroamericanos y del Caribe Barranquilla 2018, en la modalidad arranque 69 kg e impuso un récord centroamericano levantando 108 kg, sumando además la medalla de bronce en el envión."
+            Margin="30,10"/>
+
+
+
+
+            <Grid>
+                <toolkit:MediaElement 
+           Source="embed://mari.mp4" 
+            Margin="0,0,0,30"
+            HeightRequest="170"
+            WidthRequest="310"
+           
+/>
+            </Grid>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
 </ContentPage>

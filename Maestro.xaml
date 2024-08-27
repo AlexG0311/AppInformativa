@@ -14,7 +14,7 @@
     HasShadow="True"
     HorizontalOptions="Center"
     VerticalOptions="Center"
-                    Margin="10,0,0,0">
+                    Margin="10,50,0,0">
                     <Frame.Content>
                         <Image Source="paris" Aspect="AspectFill"
                     WidthRequest="200"
@@ -28,13 +28,16 @@
                 Margin="58,17,20,30"
                
                 FontSize="Title"
+                FontFamily="NerkoOne-Regular.ttf"
                 Text="Juegos Olimpicos"/>
             <Button Text="Ángel Barajas"
                Background="White"
+                    FontFamily="NerkoOne-Regular.ttf"
                 Clicked="irApagina1"
                 Margin="20,18"/>
 
             <Button Text="Yeison López"
+                    FontFamily="NerkoOne-Regular.ttf"
                Clicked="irApagina2"
                Background="White"
                Margin="20,18"/>
@@ -42,12 +45,14 @@
 
             <Button Text="Mari Leivis Sánchez"
                 Clicked="irApagina3"
+                    FontFamily="NerkoOne-Regular.ttf"
                     Background="White"
                 Margin="20,18"/>
 
 
             <Button Text="Tatiana Rentería"
                 Clicked="irApagina4"
+                    FontFamily="NerkoOne-Regular.ttf"
                 Background="White"
                 Margin="20,18"/>
 

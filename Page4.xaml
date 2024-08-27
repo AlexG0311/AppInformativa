@@ -2,21 +2,96 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppInformativa.Page4"
-             Title="Page4">
-    <VerticalStackLayout>
-        <Label 
-            Text="Tatiana Rentería "
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout>
 
-        <Label 
-            Margin="10,0"
-            Text="Domingo 11 de agosto
-- Tatiana Rentería consiguió la última medalla para la delegación colombiana con el bronce en la lucha libre femenina, categoría hasta 76 kilogramos, al vencer a la ecuatoriana Genesis Reasco."/>
+            <Grid>
+                <Frame 
+    WidthRequest="150" 
+    HeightRequest="150" 
+    CornerRadius="75" 
+    BorderColor="Gray" 
+    HasShadow="True"
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+                    <Frame.Content>
+                        <Image Source="tatiana.png" Aspect="AspectFill"
+                    WidthRequest="200"
+                   HeightRequest="150"
+                    
+                   />
+                    </Frame.Content>
+                </Frame>
+            </Grid>
 
-        <Image 
-            Margin="10,20"
-            Source="tatiana.png"/>
+            <Label
+           Text="Tatiana Rentería"
+            Margin="70,10,2,3"
+           FontAttributes="Bold"
+           FontSize="Title"/>
 
-    </VerticalStackLayout>
+            <TableView Intent="Menu">
+                <TableRoot>
+                    <TableSection>
+                        <TextCell 
+                              
+                              Detail="Luchadora"
+                           />
+                        <TextCell Text="Medallas de Oro" 
+                             TextColor="White"
+                           Detail="0" />
+                        <TextCell Text="Medallas de Plata"
+                             TextColor="White"
+                           Detail="0" />
+                        <TextCell Text="Medallas de Bronce"
+                             TextColor="White"
+                           Detail="1" />
+                        <TextCell Text="Primer Participacion"
+                                  TextColor="White"
+                            Detail="4 de agosto del 2024" />
+                        
+
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Label
+                Margin="20,20"
+                Text="La luchadora vallecaucana de 23 años vence a la ecuatoriana Génesis Reasco en el combate por el tercer puesto de la lucha olímpica, categoría de 76 kilogramos"/>
+            <Label Text="Bibliografia"
+                   FontFamily="NerkoOne" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   Margin="20"
+                   FontSize="32"/>
+
+            <Label 
+            Text="“Me críe con hombres, era uno más, jugaba y peleaba con ellos”, contó Tatiana Rentería al Comité Olímpico Colombiano en la previa de los Juegos Olímpicos de París 2024. Nació el 22 de diciembre del 2000 en Buenaventura, y su vida ha sido un ejemplo de superación personal, reflejada en su desempeño en el ring de lucha."
+            Margin="30,10"/>
+
+            <Label 
+            Text="Hace seis años, Tatiana se convirtió en madre. Aunque dejó temporalmente el deporte, contó con el apoyo de su familia y su pareja, lo que le permitió regresar a la competencia. Además de la lucha, también destacó en fútbol y levantamiento de pesas."
+            Margin="30,10"/>
+
+            <Label 
+            Text="Tatiana descubrió la lucha cuando su entrenador de pesas no asistió a los entrenamientos por algunas semanas. En su primer torneo, con pocos días de práctica, demostró un talento natural para este deporte."
+            Margin="30,10"/>
+
+
+
+
+            <Grid>
+                <toolkit:MediaElement 
+           Source="embed://bronce.mp4" 
+           Margin="0,0,0,30"
+           HeightRequest="170"
+           WidthRequest="310"
+           
+/>
+            </Grid>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
 </ContentPage>
